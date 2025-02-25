@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import * as cheerio from 'cheerio';
 
 export function activate(context: vscode.ExtensionContext) {
     const statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
@@ -6,11 +7,17 @@ export function activate(context: vscode.ExtensionContext) {
     statusBar.text = '$(rocket) Can I deploy to prod today?';
     statusBar.show();
 
-    const disposable = vscode.commands.registerCommand('estcequonmetenprodaujourdhui.showStatus', () => {
-        const canDeploy = Math.random() >= 0.5;
-        const message = canDeploy ? 'Yes, you can deploy to production!' : 'No, you cannot deploy to production!';
-        statusBar.text = canDeploy ? '$(rocket) Can deploy to prod' : '$(rocket) Cannot deploy to prod';
-        vscode.window.showInformationMessage(message);
+    const disposable = vscode.commands.registerCommand('estcequonmetenprodaujourdhui.showStatus', async () => {
+        try {
+            const response = await fetch('https://www.estcequonmetenprodaujourdhui.info/');
+            const text = await response.text();
+            const $ = cheerio.load(text);
+            const message = $('body>div>strong').text();
+            statusBar.text = `$(rocket) ${message}`;
+            vscode.window.showInformationMessage(message);
+        } catch (error) {
+            vscode.window.showErrorMessage('Failed to fetch deployment status.');
+        }
     });
 
     context.subscriptions.push(statusBar);
