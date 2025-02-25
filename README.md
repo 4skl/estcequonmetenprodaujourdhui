@@ -4,11 +4,9 @@ This is the README for your extension "estcequonmetenprodaujourdhui". After writ
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension shows a clickable icon and text in the status bar indicating whether you can deploy to production or not.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
+\!\[status bar icon\]\(images/status-bar-icon.png\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
