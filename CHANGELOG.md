@@ -4,6 +4,6 @@ All notable changes to the "estcequonmetenprodaujourdhui" extension will be docu
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.0.0] - 2025-02-26
+## [0.0.1] - 2025-02-26
 
 - Initial release
