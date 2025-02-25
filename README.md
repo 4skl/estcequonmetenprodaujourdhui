@@ -1,8 +1,8 @@
-# estcequonmetenprodaujourdhui README
+# estcequonmetenprodaujourdhui  
 
-This is the README for your extension "estcequonmetenprodaujourdhui".  
 Inspired by this conversation on [NaN](https://github.com/NotANameServer) :
-![Screenshot of the initial idea of this extension](images/initial-talk.png)
+![Screenshot of the initial idea of this extension](images/initial-talk.png)  
+Here is the official vscode extension
 
 ## Features
 
