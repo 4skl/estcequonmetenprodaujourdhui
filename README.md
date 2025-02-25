@@ -10,6 +10,8 @@ This extension shows a clickable icon and text in the status bar indicating whet
 
 ![status bar icon](images/status-bar-icon.png)
 
+It fetches the message from https://www.estcequonmetenprodaujourdhui.info/ when you click on this status bar button and show if you can put in production today or not.
+
 ## Requirements
 
 No additional requirements.
