@@ -1,7 +1,7 @@
 {
   "name": "estcequonmetenprodaujourdhui",
   "displayName": "estcequonmetenprodaujourdhui",
-  "description": "need une extension qui dit dans le bandeau du bas si on peut mettre en prod ou pas ",
+  "description": "need une extension qui dit dans le bandeau du bas si on peut mettre en prod ou pas",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.97.0"
@@ -17,12 +17,9 @@
     "type": "git",
     "url": "https://github.com/4skl/estcequonmetenprodaujourdhui"
   },
+  "publisher": "4skl",
   "contributes": {
     "commands": [
-      {
-        "command": "estcequonmetenprodaujourdhui.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "estcequonmetenprodaujourdhui.showStatus",
         "title": "Show Deployment Status"
