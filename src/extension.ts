@@ -4,7 +4,7 @@ import * as cheerio from 'cheerio';
 export function activate(context: vscode.ExtensionContext) {
     const statusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
     statusBar.command = 'estcequonmetenprodaujourdhui.showStatus';
-    statusBar.text = '$(rocket) Can I deploy to prod today?';
+    statusBar.text = '$(eye) Est-ce qu’on met en production aujourd’hui ?';
     statusBar.show();
 
     const disposable = vscode.commands.registerCommand('estcequonmetenprodaujourdhui.showStatus', async () => {
