@@ -1,8 +1,8 @@
 {
   "name": "estcequonmetenprodaujourdhui",
-  "displayName": "estcequonmetenprodaujourdhui",
+  "displayName": "Est-ce qu’on met en production aujourd’hui ?",
   "description": "need une extension qui dit dans le bandeau du bas si on peut mettre en prod ou pas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.97.0"
   },
