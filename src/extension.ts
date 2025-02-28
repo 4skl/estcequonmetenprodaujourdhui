@@ -12,8 +12,15 @@ export function activate(context: vscode.ExtensionContext) {
             const response = await fetch('https://www.estcequonmetenprodaujourdhui.info/');
             const text = await response.text();
             const $ = cheerio.load(text);
-            const message = $('body>div>strong').text();
-            statusBar.text = `$(rocket) ${message}`;
+            let message = $('body>div>strong').text();
+            let canDeploy = true;
+
+            if (!message) {
+                message = $('body>div>h2').text();
+                canDeploy = false;
+            }
+
+            statusBar.text = canDeploy ? `$(rocket) ${message}` : `$(x) ${message}`;
             vscode.window.showInformationMessage(message);
         } catch (error) {
             vscode.window.showErrorMessage('Failed to fetch deployment status.');
