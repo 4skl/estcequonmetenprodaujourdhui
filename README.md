@@ -26,9 +26,16 @@ No known issues.
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of estcequonmetenprodaujourdhui.
+
+### 0.0.2
+
+- Updated `package.json` version to 0.0.2 and improved displayName.
+- Added app icon.
+- Changed status bar default text to French and improved icon.
+- Fixed issue where the message was not displayed properly (pull request #2).
 
 ---
 
